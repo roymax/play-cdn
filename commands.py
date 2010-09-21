@@ -1,10 +1,10 @@
 # Here you can create play commands that are specific to the module, and extend existing commands
 
-MODULE = 'play-cdn'
+MODULE = 'cdn'
 
 # Commands that are specific to your module
 
-COMMANDS = ['play-cdn:hello']
+COMMANDS = ['cdn:hello']
 
 def execute(**kargs):
     command = kargs.get("command")
@@ -12,7 +12,7 @@ def execute(**kargs):
     args = kargs.get("args")
     env = kargs.get("env")
 
-    if command == "play-cdn:hello":
+    if command == "cdn:hello":
         print "~ Hello"
 
 
