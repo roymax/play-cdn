@@ -1,18 +1,22 @@
 h1. Play CDN Support Module
+
 This module allows you to use CDN url or subdomain 
 
 h2. <a>Enable the CDN Support for the application</a>
 In the **/conf/application.conf** file, enable the CDN Support by adding this line:
+
 bc. # The CDN Module 
 module.cdn=${play.path}/module/cdn
 
 p. and adding 2 line follow:
+
 bc. # The JavaScript Base URL and StyleSheet Base URL
 script_path=http://localhost:9000/public/javascript
 stylesheet_path=http://localhost:9000/public/stylesheet
 
 h2. <a>Example</a>
 In The **/views/main.html
+
 bc. # for stylesheet
 <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}">
 bc. # Replace to 
@@ -24,3 +28,4 @@ bc. # Replace to
 #{cdn.script_cdn 'path/to/jquery.js' /}
 
 Enjoy It.
+
