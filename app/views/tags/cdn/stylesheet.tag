@@ -4,7 +4,7 @@
  *  id (optional) an id attribute for the generated link tag
  *  media (optional) media : screen, print, aural, projection ...
  *  title (optional) title atttribute (or description)
- *    ${stylesheet src:'default.css' media:'screen,print' /}
+ *    #{cdn.stylesheet src:'default.css',media:'screen,print' /}
 }*
 %{
     ( _arg ) &&  ( _src = _arg);
